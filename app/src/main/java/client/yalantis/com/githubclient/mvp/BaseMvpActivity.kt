@@ -23,19 +23,19 @@ abstract class BaseMvpActivity<in V : BaseMvpView, T : BaseMvpPresenter<V>>
 
 
     override fun showError(error: String?) {
-        Toast.makeText(this, error, Snackbar.LENGTH_LONG).show()
+        Toast.makeText(this, error, Toast.LENGTH_LONG).show()
     }
 
     override fun showError(stringResId: Int) {
-        Toast.makeText(this, stringResId, Snackbar.LENGTH_LONG).show()
+        Toast.makeText(this, stringResId, Toast.LENGTH_LONG).show()
     }
 
     override fun showMessage(srtResId: Int) {
-        Toast.makeText(this, srtResId, Snackbar.LENGTH_LONG).show()
+        Toast.makeText(this, srtResId, Toast.LENGTH_LONG).show()
     }
 
     override fun showMessage(message: String) {
-        Toast.makeText(this, message, Snackbar.LENGTH_LONG).show()
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
     }
 
     override fun onDestroy() {
